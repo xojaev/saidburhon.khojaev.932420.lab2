@@ -4,98 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О себе — Ходжаев С. Д.</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+
+    
     <style>
-        body {
-            background-color: #2c2a2a;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header, main, footer {
-            padding: 20px 40px;
-        }
-
-        header {
-            border-bottom: 2px solid #c0c0c0;
-        }
-
-        h1, h2 {
-            color: #c0c0c0;
-        }
-
-        a {
-            color: #c0c0c0;
-        }
-
-        img {
-            display: block;
-            margin: 20px 0;
-            border: 2px solid #c0c0c0;
-            border-radius: 8px;
-        }
-
-        aside {
-            background-color: #3a3a3a;
-            border-left: 4px solid #c0c0c0;
-            padding: 15px 20px;
-            margin: 20px 0;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            max-width: 400px;
-            margin-bottom: 20px;
-        }
-
         input, textarea {
-            padding: 8px;
-            border: 1px solid #c0c0c0;
-            border-radius: 4px;
-            background-color: #1e1e1e;
-            color: #ffffff;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #c0c0c0;
-            color: #1e1e1e;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        button:hover {
-            background-color: #ffffff;
-        }
-
-        footer {
-            border-top: 2px solid #c0c0c0;
-            text-align: center;
+            height: 40px;        
+            font-size: 16px;     
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Ходжаев С. Д.</h1>
+        
+        <h1 style="text-align: center;">Ходжаев С. Д.</h1>
         <p>Техногик и обзорщик гаджетов</p>
     </header>
 
     <main>
         <section id="skills">
             <h2>Навыки</h2>
-            <ul>
-                <li>Тестирование смартфонов и ноутбуков</li>
-                <li>Написание технических обзоров</li>
-                <li>Сравнение характеристик устройств</li>
-                <li>Монтаж видеообзоров</li>
-                <li>Оптимизация и чистка памяти устройств</li>
-            </ul>
+            <div class="card-container">
+                <div class="card">Тестирование смартфонов и ноутбуков</div>
+                <div class="card">Написание технических обзоров</div>
+                <div class="card">Сравнение характеристик устройств</div>
+                <div class="card">Монтаж видеообзоров</div>
+                <div class="card">Оптимизация и чистка памяти устройств</div>
+            </div>
         </section>
 
         <section id="projects">
@@ -131,7 +69,7 @@
                 <label for="message">Сообщение</label>
                 <textarea id="message" name="message" placeholder="Расскажите, что хотите сообщить..." rows="5"></textarea>
 
-                <button type="submit">Отправить</button>
+                <button type="submit" class="btn">Отправить</button>
             </form>
         </section>
     </main>
@@ -139,5 +77,6 @@
     <footer>
         <p>&copy; 2026 Ходжаев С. Д. Все права защищены.</p>
     </footer>
+
 </body>
 </html>
